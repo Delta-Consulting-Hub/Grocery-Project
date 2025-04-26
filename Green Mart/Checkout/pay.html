@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Grocery Store</title>
+  <link rel="stylesheet" href="/Checkout/pay.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <div class="logo">
+      <img src="/Images/logo.png" alt="GreenMart Logo" />
+    </div>
+
+    <div class="header-right">
+      <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+      <button onclick="location.href='#'">Our Website</button>
+    </div>
+  </header>
+
+  <!-- Checkout Form -->
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <form id="userForm">
+      <label>Name:</label>
+      <input type="text" id="userName" required />
+      <label>Phone Number:</label>
+      <input type="tel" id="userPhone" required pattern="[0-9]{10}" />
+      <label>Town:</label>
+      <input type="text" id="userTown" required />
+      <button type="submit">Proceed to Payment</button>
+    </form>
+
+    <div id="cartSection" class="hidden">
+      <h3>Your Cart</h3>
+      <div id="cartItems"></div>
+      <div class="summary">
+        <p><strong>Product Price:</strong> ₹<span id="productPrice">0</span></p>
+        <p><strong>Delivery Charges:</strong> ₹<span id="deliveryCharge">0</span></p>
+        <p><strong>Total Price:</strong> ₹<span id="totalAmount">0</span></p>
+
+        <h4>Select Payment Method:</h4>
+        <button id="codBtn" type="button">Cash on Delivery</button>
+        <button id="phonepeBtn" type="button">Pay via PhonePe</button>
+      </div>
+    </div>
+
+    <div id="qrContainer" style="text-align:center; margin-top: 20px;"></div>
+  </div>
+
+  <script type="module" src="/Checkout/pay.js"></script>
+</body>
+</html>

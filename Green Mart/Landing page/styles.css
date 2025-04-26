@@ -1,0 +1,598 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #f7fff7;
+  }
+  
+  /* Header/Navbar */
+  .navbar {
+    background-color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search Bar Container */
+  .search-container {
+    position: relative;
+    width: 270px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 8px 12px 8px 34px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* Logo Centered */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Right Side Cart and Button */
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cart-icon {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Button */
+  .navbar button {
+    background-color: orange;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('/Images/bg.png') no-repeat center center/cover; /* Add your background image */
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 90px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.32rem;
+    margin-bottom: 50px;
+  }
+  
+  .hero-content button {
+    background-color: orange;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 120px;
+  }
+  
+  /* Collection Section */
+  .collection {
+    padding: 60px 40px;
+    background-color: #f0f8f4;
+    text-align: center;
+  }
+  
+  .collection h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .collection p {
+    margin-bottom: 40px;
+    color: #444;
+  }
+  
+  /* Collection Grid */
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .item p {
+    color: #333;
+  }
+  
+  .grocery-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('/Images/hero.png') no-repeat center center/cover; /* Replace with your image path */
+    color: white;
+    clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 80px;
+  }
+  
+  .main-heading {
+    align-self: flex-start;
+  }
+  
+  .main-heading h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 100px;
+  }
+  
+  .sub-text {
+    align-self: flex-end;
+    max-width: 500px;
+    text-align: right;
+  }
+  
+  .sub-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  
+  
+  .custom-footer {
+    background-color: #1c0d00;
+    color: white;
+    padding: 40px 60px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #fff3;
+    padding-bottom: 30px;
+  }
+  
+  .footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-left ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .footer-left ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-center {
+    max-width: 500px;
+  }
+  
+  .footer-center p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .social-icon {
+    background-color: white;
+    color: #1c0d00;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-bottom .powered {
+    margin-top: 5px;
+  }
+  
+  .highlight-banner {
+    background-color: #f0f8f4;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .highlight-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .highlight-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .highlight-image img {
+    width: 60%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+   
+  
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+    background-color: #fff;
+  }
+  
+  .team-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .team-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .team-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  
+  .icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .icon-box i {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .feature h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .feature p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .visit-store {
+    display: inline-block;
+    margin-top: 20px;
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .team-image {
+    flex: 1;
+    max-width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .metrics-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #fff;
+    gap: 40px;
+  }
+  
+  .metrics-left {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .metrics-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .metrics-left p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .metric-item {
+    margin-bottom: 40px;
+  }
+  
+  .metric-item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .metric-item p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar {
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .metrics-right {
+    flex: 1;
+    background-color: #f3faf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .circle-container {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .circle-chart {
+    width: 140px;
+    height: 140px;
+    transform: rotate(45deg); /* rotates to top-right */
+    margin-bottom: 30px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke: orange;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+  }
+  
+  .percentage-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .circle-caption {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .franchise-section {
+    background: orange;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 80px 60px;
+    color: #000;
+  }
+  
+  .franchise-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+  }
+  
+  .franchise-text {
+    max-width: 500px;
+  }
+  
+  .franchise-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .franchise-text p {
+    font-size: 16px;
+    color: #222;
+  }
+  
+  .franchise-card {
+    display: flex;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+  }
+  
+  .card-image img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-details h4 {
+    margin-bottom: 10px;
+  }
+  
+  .card-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .card-details li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon {
+    color: orange;
+  }
+  
+  .contact-btn {
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background: #333;
+  }
+
+#website {
+  color: goldenrod;
+}
+
+#email {
+  color: goldenrod;
+}
+
+#home{
+  color: goldenrod;
+}
+
+#contact {
+  color: goldenrod;
+}

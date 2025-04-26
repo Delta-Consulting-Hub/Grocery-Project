@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenMart</title>
+  <link rel="stylesheet" href="/Landing page/styles.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <!-- Center Logo -->
+    <div class="logo">
+      <!-- ADD YOUR LOGO IMG HERE -->
+      <img src="/Images/logo.png" alt="GreenMart Logo" />
+    </div>
+
+    <!-- Cart and Button -->
+    <div class="header-right">
+      <!-- Cart Icon -->
+      <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+      <!-- Our Website Button -->
+      <button onclick="location.href='#'">Our Website</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- ADD BACKGROUND IMAGE IN CSS FOR .hero CLASS -->
+    <div class="hero-content">
+      <h1>Experience the Smart Shopping</h1>
+      <p>Discover top-quality groceries that ensure freshness, convenience,<br> and great savings for your everyday needs.</p>
+      <button onclick="location.href='/Shop page/shop.html'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Grocery Collection Section -->
+  <section class="collection">
+    <h2>Explore Our Fresh Grocery Collection</h2>
+    <p>Browse our wide range of fresh and essential groceries, perfect for every home.</p>
+
+    <div class="collection-grid">
+      <div class="item">
+        <span>01</span>
+        <img src="/Images/1.jpg" alt="Item 1" />
+        <p>Everything for fresh, home-cooked meals</p>
+      </div>
+      <div class="item">
+        <span>02</span>
+        <img src="/Images/2.jpg" alt="Item 2" />
+        <p>Tasty treats and energizing drinks</p>
+      </div>
+      <div class="item">
+        <span>03</span>
+        <img src="/Images/3.jpg" alt="Item 3" />
+        <p>For a clean home and hygiene</p>
+      </div>
+      <div class="item">
+        <span>04</span>
+        <img src="/Images/4.jpg" alt="Item 4" />
+        <p>Daily-use items for home needs</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Explore Highlight Section -->
+<section class="highlight-banner">
+  <div class="highlight-content">
+    <div class="highlight-text">
+      <h2>Groceries Delivered with a Smile</h2>
+      <p>Experience convenient, friendly grocery delivery right at your doorstep — quick, fresh, and always with a personal touch.</p>
+    </div>
+    <div class="highlight-image">
+      <img src="/Images/delivery.jpeg" alt="Grocery Delivery at Doorstep">
+    </div>
+  </div>
+</section>
+
+
+<section class="team-section">
+  <div class="team-text">
+    <h2>Meet Our Team</h2>
+    <p>Our team works with dedication and experience to bring you fresh, quality groceries every time.</p>
+    
+    <div class="feature">
+      <div class="icon-box">
+        <!-- ⭐ ICON 1 -->
+        <i class="fas fa-star"></i>
+      </div>
+      <div>
+        <h3>Grocery Excellence</h3>
+        <p>We carefully source fresh, top-quality products to make your shopping easy and reliable.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon-box">
+        <!-- 👤 ICON 2 -->
+        <i class="fas fa-user"></i>
+      </div>
+      <div>
+        <h3>Customer-Centric Approach</h3>
+        <p>We listen to our customers and provide flexible, fast solutions to meet their grocery needs.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon-box">
+        <!-- ❤️ ICON 3 -->
+        <i class="fas fa-heart"></i>
+      </div>
+      <div>
+        <h3>Freshness First</h3>
+        <p>Strict quality checks ensure that every product stays fresh, safe, and ready for your home.</p>
+      </div>
+    </div>
+     <hr>
+    <a href="#" class="visit-store">Visit our store</a>
+  </div>
+
+  <div class="team-image">
+    <!-- 🖼️ PHOTO: Add your team photo URL here -->
+    <img src="/Images/team.jpeg" alt="Our Team" />
+  </div>
+</section>
+
+<!-- Grocery Business Section -->
+<section class="grocery-section">
+  <div class="main-heading">
+    <h1>A Journey into<br>Freshness and Quality</h1>
+  </div>
+  <div class="sub-text">
+    <p>
+      Discover the best groceries at your <br>doorstep, ensuring freshness, quality,<br>
+      and everyday convenience for your home.
+    </p>
+  </div>
+</section>
+
+<section class="metrics-section">
+  <div class="metrics-left">
+    <h2>Key Metrics of Our Achievements</h2>
+    <p>Our key milestones, from sales growth to customer trust, showcase our dedication to delivering the best grocery shopping experience.</p>
+
+    <div class="metric-item">
+      <h3>₹32 Lakh+</h3>
+      <p>Customers have saved over ₹32 lakh on their grocery purchases.</p>
+      <div class="progress-bar">
+        <div class="progress orange" style="width: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="metric-item">
+      <h3>+25,000</h3>
+      <p>We proudly serve over 25,000 satisfied customers.</p>
+      <div class="progress-bar">
+        <div class="progress orange" style="width: 60%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics-right">
+    <div class="circle-container">
+      <!-- Circular Chart -->
+      <svg class="circle-chart" viewBox="0 0 36 36">
+        <path class="circle-bg"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="circle orange"
+          stroke-dasharray="75, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
+      </svg>
+      <div class="percentage-text">75%</div>
+      <p class="circle-caption">
+        75% of customers have been shopping with us for over a decade consistently.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="franchise-section">
+  <div class="franchise-content">
+    <div class="franchise-text">
+      <h2>Partner with Us – Own a Grocery Franchise</h2>
+      <p>Join our franchise model and build a successful grocery business with trusted quality and support.</p>
+    </div>
+    <div class="franchise-card">
+      <div class="card-image">
+        <img src="/Images/pixabay.png" alt="Store Image">
+      </div>
+      <div class="card-details">
+        <h4>What you will need ?</h4>
+        <ul>
+          <li><i class="icon">✔️</i> Great Service</li>
+          <li><i class="icon">✔️</i> Growth Mindset</li>
+          <li><i class="icon">✔️</i> And more..</li>
+        </ul>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer Section -->
+<footer class="custom-footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <h3>Designed<br>for Companies</h3>
+      <ul>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="contact">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="footer-center">
+      <p>
+        We are a team of experts dedicated to helping businesses grow. Our website solutions are built for small to medium-sized companies, making online success easy and effective.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:youremail@example.com" id="email">📧 Click to send an Email</a><br>
+        <a href="https://yourwebsite.com" target="_blank" id="website">🔗 Click to visit our Website</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-solid fa-globe"></i></a>
+      <a href="https://fa-whatsapp.com" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © Delta Consulting</p>
+  </div>
+</footer>
+
+  <script type="module" src="/Landing page/script.js"></script>
+</body>
+</html>

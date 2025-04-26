@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grocery Shop</title>
+  <link rel="stylesheet" href="/Shop page/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+    <div class="logo">
+      <img src="/Images/logo.png" alt="GreenMart Logo" />
+    </div>
+    <div class="header-right">
+      <a href="/Cart/cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+      <button onclick="location.href='#'">Our Website</button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <div class="shop-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="filter-box">
+        <div class="filter-header" onclick="togglePriceFilter()">
+          <h3>Price Range</h3>
+          <span class="arrow">▾</span>
+        </div>
+        <div id="price-range-box" class="filter-content">
+          <input type="number" id="min-price" placeholder="Min ₹" />
+          <input type="number" id="max-price" placeholder="Max ₹" />
+          <button onclick="applyPriceFilter()">Apply</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="shop-main">
+      <div class="categories">
+        <button>Instant Food</button>
+        <button>Dry Snacks</button>
+        <button>Cold Drink</button>
+      </div>
+
+      <div class="shop-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." id="productSearch" />
+        </div>
+
+        <div class="sort-dropdown">
+          Sort By:
+          <select>
+            <option>Featured</option>
+            <option>Low to High</option>
+            <option>High to Low</option>
+          </select>
+        </div>
+
+        <div class="view-toggle">
+          <button><i class="fa fa-th-large"></i></button>
+          <button><i class="fa fa-bars"></i></button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="product-list">
+        <!-- Products will appear here -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Product Popup -->
+  <div id="product-popup" class="product-popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <img id="popup-img" src="" alt="Product Image" />
+      <div class="popup-info">
+        <h2 id="popup-name"></h2>
+        <p id="popup-price"></p>
+        <p id="popup-description"></p>   
+        <div class="quantity-selector">
+          <button class="qty-btn" id="decreaseQty">−</button>
+          <span id="quantityValue">1</span>
+          <button class="qty-btn" id="increaseQty">+</button>
+        </div>           
+        <button id="confirmAddToCart">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/Shop page/shop.js"></script>
+</body>
+</html>

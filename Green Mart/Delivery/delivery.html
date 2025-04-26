@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Set Delivery Charges</title>
+  <link rel="stylesheet" href="./delivery.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Delivery Charges Settings</h1>
+    <form id="delivery-form">
+      <label for="min-free-delivery">Free Delivery Above (₹):</label>
+      <input type="number" id="min-free-delivery" required placeholder="e.g. 200" />
+
+      <label for="below-100-delivery">Delivery Below ₹100 (₹):</label>
+      <input type="number" id="below-100-delivery" required placeholder="e.g. 15" />
+
+      <label for="below-200-delivery">Delivery ₹100–₹300 (₹):</label>
+      <input type="number" id="below-200-delivery" required placeholder="e.g. 10" />
+
+      <label for="below-200-delivery">Delivery Above ₹300 (₹):</label>
+      <input type="number" id="above-300-delivery" required placeholder="e.g. 10" />
+
+      <button type="button" onclick="saveDeliverySettings()">Save Settings</button>
+    </form>
+
+    <p id="save-status"></p>
+  </div>
+
+  <script src="./delivery.js"></script>
+</body>
+</html>

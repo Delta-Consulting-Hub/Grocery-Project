@@ -1,0 +1,8 @@
+Deployment ID
+
+AKfycbxGIBy-tDrony5FRFTshsCxM61I7nLCLcQcaTwsk5l2avpiRvLGqgdkD9KTv2cK1EYb
+
+Web app
+URL
+
+https://script.google.com/macros/s/AKfycbxGIBy-tDrony5FRFTshsCxM61I7nLCLcQcaTwsk5l2avpiRvLGqgdkD9KTv2cK1EYb/exec

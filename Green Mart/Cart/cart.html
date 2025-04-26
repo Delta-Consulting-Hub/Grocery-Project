@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+      <!-- Header Section -->
+  <header class="navbar">
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <!-- Center Logo -->
+    <div class="logo">
+      <!-- ADD YOUR LOGO IMG HERE -->
+      <img src="/Images/logo.png" alt="GreenMart Logo" />
+    </div>
+
+    <!-- Cart and Button -->
+    <div class="header-right">
+      <!-- Cart Icon -->
+      <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+      <!-- Our Website Button -->
+      <button onclick="location.href='#'">Our Website</button>
+    </div>
+  </header>
+
+  <main class="cart-container">
+    <section class="cart-items" id="cart-items">
+      <!-- Cart items will be inserted here -->
+    </section>
+
+    <aside class="cart-summary" id="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+      <button id="checkout-btn" onclick="proceedToPay()">Proceed to checkout</button>
+
+    </aside>
+  </main>
+
+  <script type="module" src="cart.js"></script>
+</body>
+</html>
